@@ -1,6 +1,6 @@
 # MovieLens Reccomendation
 
-**Authors**: Tony Bai, Eddie Lin, Douglas Lou, Shane Mangold
+**Authors**: Tony Bai, Eddie Lin, Douglas Lu, Shane Mangold
 
 ## Overview
 
