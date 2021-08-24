@@ -4,7 +4,18 @@
 
 ## Overview
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+Our Group was tasked to build and explore a recommendation system based on the MovieLens dataset. In this project we explore Content-Based and Collaborative Recommendation systems built on 100,000 user movie ratings.
+
+Most internet products we use today are powered by recommender systems. YouTube, Netflix, Amazon, Pinterest, and long list of other internet products all rely on recommender systems to filter millions of contents and make personalized recommendations to their users. Recommender systems are well-studied and proven to provide tremendous values to internet businesses and their consumers.
+
+There are majorly six types of recommender systems which work primarily in the Media and Entertainment industry:
+
+Collaborative Recommender system
+Content-based recommender system
+Knowledge based recommender system
+Hybrid recommender system
+Demographic based recommender system
+Utility based recommender system
 
 ## Business Problem
 
