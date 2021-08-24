@@ -19,26 +19,20 @@ Utility based recommender system
 
 ## Business Problem
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
-
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
-***
-
+We have been tasked to improve on an 
 ## Data
 
-Describe the data being used for this project.
+MovieLens 100K dataset has been used for this project. MovieLens is a rating dataset from the MovieLens website, which has been collected over some period. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies. Released on 4/1998. Further information regarding this dataset can be found here.
 
-***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
-***
+A little about the dataset:
+
+MovieLens data sets were collected by the GroupLens Research Project at the University of Minnesota.
+
+This data set consists of:
+
+* 100,000 ratings (1-5) from 943 users on 1682 movies.
+* Each user has rated at least 20 movies.
+* Simple demographic info for the users (age, gender, occupation, zip)
 
 ## Methods
 
