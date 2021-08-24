@@ -19,7 +19,8 @@ Utility based recommender system
 
 ## Business Problem
 
-We have been tasked to improve on an 
+We have been tasked to improve on an existing recommendation system. We will explore the traditional Recommendation systems and attempt to build a hybrid model that will use multiple recommendation systems in order to provide imporoved reccomendations.
+
 ## Data
 
 MovieLens 100K dataset has been used for this project. MovieLens is a rating dataset from the MovieLens website, which has been collected over some period. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies. Released on 4/1998. Further information regarding this dataset can be found here.
@@ -36,13 +37,17 @@ This data set consists of:
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+### Content Based Filtering
 
-***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
-***
+We first explored content based filtering using TF-IDF vectorizer to calcualte the distance between the data points. We chose to use cosine similarity to measure the distance between these vectors. **Cosine** similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. Given two vectors of attributes, A and B, the cosine similarity, cos(θ), is represented using a dot product and magnitude as Inline-style. From the TF-IDF vectorizer we would then return a list of movies that are most cosine similar.
+
+### Collaborative Filtering
+
+Item-Item:
+
+Item-item collaborative filtering, or item-based, or item-to-item, is a form of collaborative filtering for recommender systems based on the similarity between items calculated using people's ratings of those items. In this instance, we are trying to find movie that are similar to each other based on people's ratings of those items (in this case movies). This algorithm takes far less resources and time than user-user due to its fixed number of movies and also to the fact that we dont require a similarity score between all users. 
+
+
 
 ## Results
 
