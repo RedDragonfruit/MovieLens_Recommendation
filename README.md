@@ -10,12 +10,12 @@ Most internet products we use today are powered by recommender systems. YouTube,
 
 There are majorly six types of recommender systems which work primarily in the Media and Entertainment industry:
 
-Collaborative Recommender system
-Content-based recommender system
-Knowledge based recommender system
-Hybrid recommender system
-Demographic based recommender system
-Utility based recommender system
+* Collaborative Recommender system
+* Content-based recommender system
+* Knowledge based recommender system
+* Hybrid recommender system
+* Demographic based recommender system
+* Utility based recommender system
 
 ## Business Problem
 
