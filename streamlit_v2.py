@@ -29,7 +29,7 @@ if st.button('Open IMDb'):
 
 url_rt = "https://www.rottentomatoes.com/m/die_hard"
 
-if st.button('Rotten Tomatoes'):
+if st.button('Open Rotten Tomatoes'):
     webbrowser.open_new_tab(url_rt)
 
 
