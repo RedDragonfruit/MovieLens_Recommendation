@@ -4,3 +4,4 @@ seaborn==0.11.1
 matplotlib==3.4.3
 pandas==1.3.2
 scikit-learn
+bokeh==2.3.3
