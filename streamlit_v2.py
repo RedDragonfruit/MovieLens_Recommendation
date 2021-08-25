@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics import pairwise_distances
 from scipy.spatial.distance import cosine, correlation
 import webbrowser
-
+from bokeh.models.widgets import Div
 
 st.set_page_config(layout = 'centered')
 
@@ -17,10 +17,17 @@ st.header("Random Movie of the Day")
 st.markdown("![Alt Text](https://upload.wikimedia.org/wikipedia/en/7/7e/Die_hard.jpg)")
 st.write("Die Hard (1988)")
 
-url_imdb = ("https://www.imdb.com/title/tt0095016/")
-if st.button('Open IMDb'):
-    webbrowser.open_new_tab(url_imdb)
+#url_imdb = ("https://www.imdb.com/title/tt0095016/")
+#if st.button('Open IMDb'):
+#    webbrowser.open_new_tab(url_imdb)
+
 #st.markdown(url, unsafe_allow_html=True)
+
+if st.button('IMDb'):
+    js = "window.open('https://www.imdb.com/title/tt0095016/')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
 #code only works locally at the time
 
 
