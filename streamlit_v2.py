@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import pairwise_distances
 from scipy.spatial.distance import cosine, correlation
-#import webbrowser
-
-
+import webbrowser
 
 
 st.set_page_config(layout = 'centered')
@@ -19,19 +17,18 @@ st.header("Random Movie of the Day")
 st.markdown("![Alt Text](https://upload.wikimedia.org/wikipedia/en/7/7e/Die_hard.jpg)")
 st.write("Die Hard (1988)")
 
-#url_imdb = ("https://www.imdb.com/title/tt0095016/")
+url_imdb = ("https://www.imdb.com/title/tt0095016/")
 if st.button('Open IMDb'):
-    pass
-#    webbrowser.open_new_tab(url_imdb)
+    webbrowser.open_new_tab(url_imdb)
 #st.markdown(url, unsafe_allow_html=True)
 #code only works locally at the time
 
 
-#url_rt = "https://www.rottentomatoes.com/m/die_hard"
+url_rt = "https://www.rottentomatoes.com/m/die_hard"
 #
 if st.button('Rotten Tomatoes'):
-    pass
-#    webbrowser.open_new_tab(url_rt)
+    #pass
+   webbrowser.open_new_tab(url_rt)
 
 
 
