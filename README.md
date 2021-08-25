@@ -47,6 +47,8 @@ Item-Item:
 
 Item-item collaborative filtering, or item-based, or item-to-item, is a form of collaborative filtering for recommender systems based on the similarity between items calculated using people's ratings of those items. In this instance, we are trying to find movie that are similar to each other based on people's ratings of those items (in this case movies). This algorithm takes far less resources and time than user-user due to its fixed number of movies and also to the fact that we dont require a similarity score between all users. 
 
+We used Item to Item to constuct a function where we created a similarity matrix of top rated movies of the selected user. From there we get the pairwise distance between the selected movie and all other movies. The function then returns a unique list of movies that are most similar (closest pairwise distance from those movies)
+
 
 
 ## Results
