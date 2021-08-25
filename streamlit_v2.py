@@ -6,9 +6,6 @@ from scipy.spatial.distance import cosine, correlation
 import webbrowser
 
 
-###
-
-###
 
 
 st.set_page_config(layout = 'centered')
@@ -29,7 +26,7 @@ if st.button('Open IMDb'):
 
 url_rt = "https://www.rottentomatoes.com/m/die_hard"
 
-if st.button('Open Rotten Tomatoes'):
+if st.button('Rotten Tomatoes'):
     webbrowser.open_new_tab(url_rt)
 
 
@@ -87,7 +84,7 @@ def get_recommendations_based_on_title(movie_title, cosine_score=cosine_score):
 #     print(movie_indices)
 
     
-movie = st.text_input("Enter Movie Name and year",'Blue Sky (1994)')
+movie = st.text_input("Enter Movie Name and year",'Ip Man 3 (2015)')
 if st.button('Enter'):
     result = movie
     st.success(result)
