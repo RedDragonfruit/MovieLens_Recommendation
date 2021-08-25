@@ -3,8 +3,41 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import pairwise_distances
 from scipy.spatial.distance import cosine, correlation
+import webbrowser
+
+
+###
+
+###
+
+
+st.set_page_config(layout = 'centered')
 
 st.title("Movie Recommendation")
+
+
+#temp hard coded random movie of the day
+st.header("Random Movie of the Day")
+
+st.markdown("![Alt Text](https://upload.wikimedia.org/wikipedia/en/7/7e/Die_hard.jpg)")
+st.write("Die Hard (1988)")
+
+url_imdb = ("https://www.imdb.com/title/tt0095016/")
+if st.button('Open IMDb'):
+    webbrowser.open_new_tab(url_imdb)
+#st.markdown(url, unsafe_allow_html=True)
+
+url_rt = "https://www.rottentomatoes.com/m/die_hard"
+
+if st.button('Rotten Tomatoes'):
+    webbrowser.open_new_tab(url_rt)
+
+
+
+
+st.write("______________________________________")
+#if st.button('Open IMDb'):
+#    st.markdown(url, unsafe_allow_html=True)
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
@@ -12,6 +45,8 @@ from sklearn.metrics.pairwise import linear_kernel
 ratings = pd.read_csv('Data/ratings.csv')
 movies = pd.read_csv('Data/movies.csv')
 
+
+st.write("Movie dataset")
 st.write(movies)
 
 # Define a TF-IDF Vectorizer Object.
@@ -52,9 +87,9 @@ def get_recommendations_based_on_title(movie_title, cosine_score=cosine_score):
 #     print(movie_indices)
 
     
-movie = st.text_input("Enter Movie Name",'Blue Sky (1994)')
+movie = st.text_input("Enter Movie Name and year",'Blue Sky (1994)')
 if st.button('Enter'):
-    result = movie.title()
+    result = movie
     st.success(result)
     st.write(get_recommendations_based_on_title(result))
 
