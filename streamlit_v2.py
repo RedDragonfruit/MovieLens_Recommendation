@@ -31,11 +31,15 @@ if st.button('IMDb'):
 #code only works locally at the time
 
 
-url_rt = "https://www.rottentomatoes.com/m/die_hard"
+#url_rt = "https://www.rottentomatoes.com/m/die_hard"
 #
 if st.button('Rotten Tomatoes'):
+    js = "window.open('https://www.rottentomatoes.com/m/die_hard')"  # New tab or window
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
     #pass
-   webbrowser.open_new_tab(url_rt)
+    #webbrowser.open_new_tab(url_rt)
 
 
 
