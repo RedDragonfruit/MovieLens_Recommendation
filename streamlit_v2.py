@@ -34,10 +34,10 @@ if st.button('IMDb'):
 #url_rt = "https://www.rottentomatoes.com/m/die_hard"
 #
 if st.button('Rotten Tomatoes'):
-    js = "window.open('https://www.rottentomatoes.com/m/die_hard')"  # New tab or window
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
+    jz = "window.open('https://www.rottentomatoes.com/m/die_hard')"  # New tab or window
+    html2 = '<img src onerror="{}">'.format(jz)
+    div2 = Div(text=html2)
+    st.bokeh_chart(div2)
     #pass
     #webbrowser.open_new_tab(url_rt)
 
