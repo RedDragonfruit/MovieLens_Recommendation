@@ -21,7 +21,7 @@ tfidf_movies_genres_matrix = tfidf_movies_genres.fit_transform(movies['genres'])
 cosine_score = linear_kernel(tfidf_movies_genres_matrix, tfidf_movies_genres_matrix)
 
 #using TF-IDF Vectorizer Oject to calculate recommendations
-def get_recommendations_based_on_genres(movie_title, cosine_score=cosine_score):
+def get_recommendations_based_on_title(movie_title, cosine_score=cosine_score):
     """
     Calculates top 2 movies to recommend based on given movie titles genres. 
     :param movie_title: title of movie to be taken for base of recommendation
@@ -45,8 +45,8 @@ def get_recommendations_based_on_genres(movie_title, cosine_score=cosine_score):
     # Get the movie indices
     movie_indices = [i[0] for i in sim_scores_movies]
     
-    # Return the top 2 most similar movies
-    return movies['title'].iloc[movie_indices]
+    movie_indices = [movies['title'].iloc[i[0]] for i in sim_scores_movies if movies['title'].iloc[i[0]]!=movie_title ]
+    return movie_indices
     
 #     # Return the top 2 most similar movies
 #     print(movie_indices)
@@ -56,7 +56,7 @@ movie = st.text_input("Enter Movie Name",'Blue Sky (1994)')
 if st.button('Enter'):
     result = movie.title()
     st.success(result)
-    st.write(get_recommendations_based_on_genres(result))
+    st.write(get_recommendations_based_on_title(result))
 
 #     movie_indices = [movies['title'].iloc[i[0]] for i in sim_scores_movies if movies['title'].iloc[i[0]]!=movie_title ]
     
