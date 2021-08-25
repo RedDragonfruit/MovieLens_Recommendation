@@ -39,15 +39,15 @@ This data set consists of:
 
 ### Content Based Filtering
 
-We first explored content based filtering using TF-IDF vectorizer to calcualte the distance between the data points. We chose to use cosine similarity to measure the distance between these vectors. **Cosine** similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. Given two vectors of attributes, A and B, the cosine similarity, cos(θ), is represented using a dot product and magnitude as Inline-style. From the TF-IDF vectorizer we would then return a list of movies that exhibit the most cosine similarity.
+We first explored content based filtering using TF-IDF vectorizer to calcualte the distance between the data points. We chose to use cosine similarity to measure the distance between these vectors. Cosine similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. Given two vectors of attributes, A and B, the cosine similarity, cos(θ), is represented using a dot product and magnitude as Inline-style. From the TF-IDF vectorizer we would then return a list of movies that exhibit the most cosine similarity.
 
 ### Collaborative Filtering
 
 Item-Item:
 
-Item-item collaborative filtering, or item-based, or item-to-item, is a form of collaborative filtering for recommendation systems based on the similarity between items calculated using people's ratings of those items. In this instance, we are trying to find movies that are similar to each other based on people's ratings of those items (in this case, movies). This algorithm takes far less resources and time than user-user due to its fixed number of movies and also to the fact that we dont require a similarity score between all users. 
+Item-item collaborative filtering, or item-based, or item-to-item, is a form of collaborative filtering for recommendation systems based on the similarity between items calculated using people's ratings of those items. In this instance, we are trying to find movies that are similar to each other based on people's ratings of those items (in this case, movies). This algorithm takes far less resources and time than user-user due to its fixed number of movies and also to the fact that we do not require a similarity score between all users. 
 
-We used item-to-item filtering to constuct a function where we created a similarity matrix of top rated movies of the selected user. From there we get the pairwise distance between the selected movie and all other movies. The function then returns a unique list of movies that are most similar (closest pairwise distance from those movies)
+We used item-to-item filtering to constuct a function where we created a similarity matrix of top rated movies of the selected user. From there we obtain the pairwise distance between the selected movie and all other movies. The function then returns a unique list of movies that are most similar (closest pairwise distance from those movies) as the recommendation. 
 
 
 
