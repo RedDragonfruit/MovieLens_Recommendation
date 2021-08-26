@@ -33,7 +33,6 @@ This data set consists of:
 
 * 100,000 ratings (1-5) from 943 users on 1682 movies.
 * Each user has rated at least 20 movies.
-* Simple demographic info for the users (age, gender, occupation, zip)
 
 ## Methods
 
@@ -78,6 +77,8 @@ Questions to consider:
 ***
 
 ## For More Information
+
+![Demo](./images/site_demo.gif)
 
 Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
 
