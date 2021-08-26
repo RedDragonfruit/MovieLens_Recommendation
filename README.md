@@ -78,9 +78,9 @@ Describe the structure of your repository and its contents, for example:
 ```
 ├── Data
 ├── Images
-├── README.md                           <- The top-level README for reviewers of this project
+├── README.md     <- The top-level README for reviewers of this project
 ├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── Project_Presentation.pdf         <- PDF version of project presentation
+├── Project_Presentation.pdf  <- PDF version of project presentation
 ├── requirements.txt  <- package requirements to run streamliit
 ├── streamlit_v2.py  <- Code to initate streamlit site
 ```
