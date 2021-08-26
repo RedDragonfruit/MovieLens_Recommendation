@@ -76,10 +76,11 @@ Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-t
 Describe the structure of your repository and its contents, for example:
 
 ```
+├── Data
+├── Images
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
 ├── Project_Presentation.pdf         <- PDF version of project presentation
-├── Data                      
-  ├── data                                <- Both sourced externally and generated from code
-  └── images                              <- Both sourced externally and generated from code
+├── requirements.txt  <- package requirements to run streamliit
+├── streamlit_v2.py  <- Code to initate streamlit site
 ```
