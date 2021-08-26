@@ -1,8 +1,10 @@
-# MovieLens Reccomendation
+# MovieLens Recomendation
 
 **Authors**: Tony Bai, Eddie Lin, Douglas Lu, Shane Mangold
 
 ## Overview
+
+![Demo](./images/site_demo.gif)
 
 Our team was tasked to build and explore a recommendation system based on the MovieLens dataset. In this project, we explored both Content-Based and Collaborative Recommendation systems built on 100,000 user movie ratings.
 
@@ -66,8 +68,6 @@ These algorithms provided a baseline knowledge of how a sophisitcated combined f
 
 ## For More Information
 
-![Demo](./images/site_demo.gif)
-
 Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
 
 For any additional questions, please contact **name & email, name & email**
@@ -77,15 +77,11 @@ For any additional questions, please contact **name & email, name & email**
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── __init__.py                         <- .py file that signals to python these folders contain packages
 ├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── code
-│   ├── __init__.py                     <- .py file that signals to python these folders contain packages
-│   ├── visualizations.py               <- .py script to create finalized versions of visuals for project
-│   ├── data_preparation.py             <- .py script used to pre-process and clean data
-│   └── eda_notebook.ipynb              <- Notebook containing data exploration
+├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── Project_Presentation.pdf         <- PDF version of project presentation
+├── Data
+│   ├── Archive                     <- old notebooks
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
 ```
