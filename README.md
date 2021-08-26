@@ -56,32 +56,31 @@ We used item-to-item filtering to constuct a function where we created a similar
 
 ## Results
 
-Evaluating a recommendation system can be very tricky because there are so many different metrics to look at. For instance, academic metrics for evaluating models are typically RMSE, MAE , Recall and accuracy etc.  However a high error for a model does not necessarily correspond directly to a poor recommendation system. For the purpose of a recommendation system we would recommend to evaluate also on "online" metrics such as A/B testing various versions of the recommendation system
+Evaluating a recommendation system can be very tricky because there are so many different metrics to look at. For instance, academic metrics for evaluating models, to name a few, are typically RMSE, MAE, recall and accuracy. However, a high error for a model does not necessarily correspond directly to a poor recommendation system. For the purpose of a evaluating a recommendation system, we would recommend to evaluate also on "online" metrics such as A/B testing various versions of the recommendation system.
 
-The RMSE is aroun .87 and our MAE is around .67 for our Knn and SVD models which is pretty decent. We chose to look closely at mean squared error since it tells us how far off our predicted score is versus the actual scores that the user chose. This score doesnt reflect the actual performance of our recommendation system due to the fact that we are using collaborative filtering. We would like to refine our model and reduce the error because our hybrid model utilizes collaborative filtering and modeling.
+The RMSE is around 0.87 and our MAE is around 0.67 for our KNN and SVD models which is pretty decent. We chose to look closely at mean squared error since it tells us how far off our predicted score is versus the actual scores that the user chose. This score doesn't reflect the actual performance of our recommendation system due to the fact that we are using collaborative filtering. We would like to refine our model and reduce the error because our hybrid model utilizes collaborative filtering and modeling.
 
-Another metric we decided to look at is coverage: what percentage of movies does our system recommend from the total pool. Our user to user covers 11% and 32% for our item to item. This is not great. Due to the skewedness of the genres and how our item to item model uses genre to recommend, many genres movies do not get selected. We will aim to improve this by allowing users more options in selecting movies they want and adjusting the intertface to allow the user to further filter the output. For example movies that are more recent or during a certain timeframe or another example would be allowing the user to select a minimum number of reviews before a movie is recocmended.
+Another metric we decided to look at is coverage: what percentage of movies does our system recommend from the total pool. Our user to user model covers 4.5% and our item to item model covers 32%. Due to the skewedness of the genres and how our item to item model uses genre to make recommendations, many genres do not get selected. We will aim to improve upon this by allowing users more options in selecting movies they want and adjusting the intertface to allow the user to further filter the output. For example, recommending movies that are more recent or during a specific timeframe. Another example would be allowing the user to select a minimum number of reviews before a movie is recommended. We recognize that additional implementations will need to be made to improve upon the coverage metric.
+
 
 ## Conclusions
 
-These algorithms provided a baseline knowledge of how a sophisitcated combined filter can be accomplished. Next steps would be combining the models together in a web implementation that has a more sophisticated user interface.
+These algorithms provided a baseline knowledge of how a sophisticated combined filter can be accomplished. The next steps for this project would be to combine the models together in a web implementation that has a more sophisticated user interface.
 
 ## For More Information
 
 Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
-
-For any additional questions, please contact **name & email, name & email**
 
 ## Repository Structure
 
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── Project_Presentation.pdf         <- PDF version of project presentation
 ├── Data
-│   ├── Archive                     <- old notebooks
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── Images
+├── README.md     <- The top-level README for reviewers of this project
+├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── Project_Presentation.pdf  <- PDF version of project presentation
+├── requirements.txt  <- package requirements to run streamliit
+├── streamlit_v2.py  <- Code to initate streamlit site
 ```
