@@ -4,6 +4,8 @@
 
 ## Overview
 
+![Demo](./images/site_demo.gif)
+
 Our team was tasked to build and explore a recommendation system based on the MovieLens dataset. In this project, we explored both Content-Based and Collaborative Recommendation systems built on 100,000 user movie ratings.
 
 Most internet products we use today are powered by recommendation systems. YouTube, Netflix, Amazon, Pinterest, and a long list of other internet products and services all rely on recommendation systems to filter through millions of contents in order to make personalized recommendations to their users. Recommendation systems are well-studied and have been proven to provide tremendous values to internet businesses and their consumers.
@@ -65,8 +67,6 @@ Another metric we decided to look at is coverage: what percentage of movies does
 These algorithms provided a baseline knowledge of how a sophisitcated combined filter can be accomplished. Next steps would be combining the models together in a web implementation that has a more sophisticated user interface.
 
 ## For More Information
-
-![Demo](./images/site_demo.gif)
 
 Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
 
