@@ -79,7 +79,7 @@ Describe the structure of your repository and its contents, for example:
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── Project_Presentation.pdf         <- PDF version of project presentation
 ├── Data
 │   ├── Archive                     <- old notebooks
 ├── data                                <- Both sourced externally and generated from code
