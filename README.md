@@ -19,6 +19,8 @@ There are mainly six types of recommendation systems which work primarily in the
 
 ## Business Problem
 
+Nowadays, every recommended movie that consumers can find across their platform, whether its Hulu, Netflix or Prime Video, are all limited only to those movies that are contained in each application. We aim to build a third party movie recommender that can take a title and recommend you similar movies that are not limited to a streaming platform
+
 Our team has been tasked to build a recommendation system model in order to improve upon existing recommendation systems. We will explore the traditional recommendation systems and attempt to build a hybrid model that will utilize multiple recommendation systems in order to provide improved reccomendations.
 
 ## Data
