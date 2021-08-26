@@ -60,9 +60,6 @@ The RMSE is aroun .87 and our MAE is around .67 for our Knn and SVD models which
 
 Another metric we decided to look at is coverage: what percentage of movies does our system recommend from the total pool. Our user to user covers 11% and 32% for our item to item. This is not great. Due to the skewedness of the genres and how our item to item model uses genre to recommend, many genres movies do not get selected. We will aim to improve this by allowing users more options in selecting movies they want and adjusting the intertface to allow the user to further filter the output. For example movies that are more recent or during a certain timeframe or another example would be allowing the user to select a minimum number of reviews before a movie is recocmended.
 
-### Visual 1
-![graph1](./images/viz1.png)
-
 ## Conclusions
 
 These algorithms provided a baseline knowledge of how a sophisitcated combined filter can be accomplished. Next steps would be combining the models together in a web implementation that has a more sophisticated user interface.
