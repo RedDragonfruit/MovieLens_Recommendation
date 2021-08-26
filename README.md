@@ -54,29 +54,18 @@ We used item-to-item filtering to constuct a function where we created a similar
 
 ## Results
 
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
+Evaluating a recommendation system can be very tricky because there are so many different metrics to look at. For instance, academic metrics for evaluating models are typically RMSE, MAE , Recall and accuracy etc.  However a high error for a model does not necessarily correspond directly to a poor recommendation system. For the purpose of a recommendation system we would recommend to evaluate also on "online" metrics such as A/B testing various versions of the recommendation system
 
-***
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
-***
+The RMSE is aroun .87 and our MAE is around .67 for our Knn and SVD models which is pretty decent. We chose to look closely at mean squared error since it tells us how far off our predicted score is versus the actual scores that the user chose. This score doesnt reflect the actual performance of our recommendation system due to the fact that we are using collaborative filtering. We would like to refine our model and reduce the error because our hybrid model utilizes collaborative filtering and modeling.
 
-Here is an example of how to embed images from your sub-folder:
+Another metric we decided to look at is coverage: what percentage of movies does our system recommend from the total pool. Our user to user covers 11% and 32% for our item to item. This is not great. Due to the skewedness of the genres and how our item to item model uses genre to recommend, many genres movies do not get selected. We will aim to improve this by allowing users more options in selecting movies they want and adjusting the intertface to allow the user to further filter the output. For example movies that are more recent or during a certain timeframe or another example would be allowing the user to select a minimum number of reviews before a movie is recocmended.
 
 ### Visual 1
 ![graph1](./images/viz1.png)
 
 ## Conclusions
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
-
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
+These algorithms provided a baseline knowledge of how a sophisitcated combined filter can be accomplished. Next steps would be combining the models together in a web implementation that has a more sophisticated user interface.
 
 ## For More Information
 
