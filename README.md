@@ -81,6 +81,6 @@ Describe the structure of your repository and its contents, for example:
 ├── README.md     <- The top-level README for reviewers of this project
 ├── main.ipynb   <- Narrative documentation of analysis in Jupyter notebook
 ├── Project_Presentation.pdf  <- PDF version of project presentation
-├── requirements.txt  <- package requirements to run streamliit
+├── requirements.txt  <- package requirements to run streamlit
 ├── streamlit_v2.py  <- Code to initate streamlit site
 ```
